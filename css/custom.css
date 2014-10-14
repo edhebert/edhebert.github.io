@@ -1,0 +1,201 @@
+/* Custon CSS Styles */
+a,
+a i,
+.article-item img {
+  transition: .3s;
+  -o-transition: .3s;
+  -ms-transition: .3s;
+  -moz-transition: .3s;
+  -webkit-transition: .3s;
+}
+a,
+a:visited {
+  color: #808285;
+  font-weight: 700;
+}
+a:hover,
+a:active {
+  color: #e5665d;
+}
+body {
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 16px;
+  color: #808285;
+  line-height: 1.6;
+}
+/* Font Awesome mods */
+.fa-2x {
+  font-size: 1.1em;
+  margin: 5px 2px 0 0;
+}
+header {
+  border-top: 20px solid #A51C30;
+}
+footer {
+  padding: 100px 0 0 0;
+  border-bottom: 20px solid #A51C30;
+}
+.line {
+  border-right: 1px solid #A51C30;
+  height: 50px;
+}
+h1 {
+  margin: 10px 0 2px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 24px;
+}
+.navbar-default {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+.navbar-default .navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px 0px;
+  color: #333;
+}
+.nav > li > a {
+  padding: 5px 15px;
+}
+.introtext {
+  margin: 100px 0;
+  font-size: 24px;
+}
+img {
+  max-width: 100%;
+}
+.bio-img {
+  float: right;
+  margin: 50px 100px 0 0;
+}
+.article-item {
+  position: relative;
+  margin: 0 !important;
+  width: 50%;
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  background: #eee;
+}
+.article-info {
+  display: none;
+  position: absolute;
+  height: 300px;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0 10%;
+  margin: auto;
+  z-index: 99;
+}
+.article-item img {
+  width: auto;
+  height: auto;
+}
+.article-copy {
+  margin: 30px 0 40px 0;
+}
+/* Content on Subordinate Pages */
+.carousel img {
+  min-width: 100%;
+}
+.content {
+  margin-bottom: 70px;
+}
+.content p {
+  margin-bottom: 20px;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #F17184;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: thin dotted;
+  outline: 5px auto #A51C30;
+  outline-offset: -2px;
+}
+/*Media Queries */
+@media (min-width: 768px) {
+  .bumpleft {
+    margin-left: -18px;
+    padding-bottom: 10px;
+  }
+  #navigation {
+    display: block;
+  }
+  .navbtn {
+    display: none;
+  }
+  .navbar-default {
+    background-image: none;
+    background-repeat: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  .title {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    margin-top: 0;
+    padding-right: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .article-item {
+    width: 25%;
+  }
+}
+@media (max-width: 767px) {
+  .navbtn {
+    display: block;
+    margin: 20px 10px 10px 0;
+  }
+  .introtext {
+    font-size: 18px;
+    margin: 50px 0;
+    text-align: center;
+  }
+  footer {
+    padding: 50px 0 20px 0;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .article-copy {
+    font-size: 12px;
+    margin: 20px 0 30px 0;
+  }
+  .content {
+    margin-bottom: 30px;
+  }
+  .bio-img {
+    margin: 100px 0 20px 20px;
+    max-width: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .article-copy {
+    display: none;
+  }
+  h2 {
+    margin-top: 100px;
+  }
+}
