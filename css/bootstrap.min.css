@@ -984,7 +984,7 @@ h6,
 .h6 {
   font-family: inherit;
   font-weight: 500;
-  line-height: 0.8;
+  line-height: 1.2;
   color: inherit;
 }
 h1 small,
@@ -7832,7 +7832,7 @@ button.close {
 .fa-meanpath:before {
   content: "\f20c";
 }
-/* Custon CSS Styles */
+/* Custom CSS Styles */
 a,
 a:visited {
   font-weight: 700;
