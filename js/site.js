@@ -20,4 +20,41 @@
         var url = $(this).find('a').attr('href');
         window.location.href = url;
     });
+
+    // check if message exists on focusout
+    $('#message').focusout(function(){
+        if ($('#message').val().length == 0) {
+            // show error
+            $('.msg-group .help-block').text('Please enter your message!');
+            $('.msg-group').attr({
+                class: 'form-group msg-group has-error'
+            });
+        }
+        // clear error message
+        else {
+            $('.msg-group .help-block').text('');
+            $('.msg-group').attr({
+                class: 'form-group msg-group'
+            });
+        }
+
+    });
+
+    // check if message exists before submit
+    $('#contactButton').click(function(e){
+        // prevent default button behavior
+        e.preventDefault();
+
+        if ($('#message').val().length == 0) {
+            $('.msg-group .help-block').text('Please enter your message!');
+            $('.msg-group').attr({
+                class: 'form-group msg-group has-error'
+            });
+        }
+        else {
+            // show the modal thank you message
+            $('#myModal').modal();
+        }
+
+    });
 });
