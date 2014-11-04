@@ -1,5 +1,37 @@
  $(document).ready(function() {
 
+    // Style nav menu appropriately for active page
+
+    // detect and split URL segments
+    var url = document.URL;
+    var urlSplit = url.replace('http://', '').split('/');
+    var activeSegment = urlSplit[1].toLowerCase();
+    console.log(activeSegment);
+    var isSubPage = 0;
+
+    // if we're at the home page, mark that li active
+    if (activeSegment == '' || activeSegment == 'index.html') {
+        $('.nav > li:first-child ').addClass('active');
+        console.log('we at the hp!');
+    }
+    else {
+        // compare each nav item against the current URL
+        $('.nav > li > a').each(function() {
+            // convert each navItem to lowercse, compare against URL
+            var navItem = $(this).text().toLowerCase();
+            // if the current link is the same as the current URL, add an 'active' class to the appropriate li
+            if (navItem === activeSegment)
+            {
+                // add an active Class to the parent li element
+                $(this).parent().addClass('active');
+            }
+        });        
+    }
+
+
+
+
+
     // Handle Project Item hover and click behavior
     $('.article-item').hover(function(){
         // fade in the Project Info
