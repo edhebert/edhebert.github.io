@@ -190,12 +190,12 @@
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-  background-image: -webkit-linear-gradient(top, #777777 0%, #6a6a6a 100%);
-  background-image: -o-linear-gradient(top, #777777 0%, #6a6a6a 100%);
-  background-image: linear-gradient(to bottom, #777777 0%, #6a6a6a 100%);
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0) 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff777777', endColorstr='#ff6a6a6a', GradientType=0);
-  background-color: #6a6a6a;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=0);
+  background-color: rgba(0, 0, 0, 0);
 }
 .navbar-default {
   background-image: -webkit-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
@@ -339,13 +339,13 @@
 .list-group-item.active,
 .list-group-item.active:hover,
 .list-group-item.active:focus {
-  text-shadow: 0 -1px 0 #5e5e5e;
-  background-image: -webkit-linear-gradient(top, #777777 0%, #646464 100%);
-  background-image: -o-linear-gradient(top, #777777 0%, #646464 100%);
-  background-image: linear-gradient(to bottom, #777777 0%, #646464 100%);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0);
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0) 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff777777', endColorstr='#ff646464', GradientType=0);
-  border-color: #646464;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=0);
+  border-color: rgba(0, 0, 0, 0);
 }
 .panel {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);

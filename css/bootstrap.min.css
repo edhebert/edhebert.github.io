@@ -3158,10 +3158,10 @@ tbody.collapse.in {
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-  color: #ffffff;
+  color: #a51c30;
   text-decoration: none;
   outline: 0;
-  background-color: #777777;
+  background-color: transparent;
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
@@ -3682,8 +3682,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  color: #ffffff;
-  background-color: #777777;
+  color: #a51c30;
+  background-color: transparent;
 }
 .nav-stacked > li {
   float: none;
@@ -4847,9 +4847,9 @@ a.list-group-item:focus {
 .list-group-item.active:hover,
 .list-group-item.active:focus {
   z-index: 2;
-  color: #ffffff;
-  background-color: #777777;
-  border-color: #777777;
+  color: #a51c30;
+  background-color: transparent;
+  border-color: transparent;
 }
 .list-group-item.active .list-group-item-heading,
 .list-group-item.active:hover .list-group-item-heading,
@@ -4865,7 +4865,7 @@ a.list-group-item:focus {
 .list-group-item.active .list-group-item-text,
 .list-group-item.active:hover .list-group-item-text,
 .list-group-item.active:focus .list-group-item-text {
-  color: #dddddd;
+  color: rgba(102, 102, 102, 0);
 }
 .list-group-item-success {
   color: #3c763d;
